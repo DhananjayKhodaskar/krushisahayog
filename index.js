@@ -43,7 +43,7 @@ const startMongoose = connectMongoose();
 const startingPassport = initializingPassport(passport);
 
 //GET LOGOUT
- 
+ //Updated
 app.use(user_routes);
 app.use(index_routes);
 
