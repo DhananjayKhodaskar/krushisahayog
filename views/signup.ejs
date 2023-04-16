@@ -6,7 +6,7 @@
             <input type="text" id="displayName" name="displayName" placeholder="Name"  value="<%= oldInput.displayName %>"required>
         </div>
         <div>
-            <label for="email">Email</label>
+            <label for="email">ईमेल</label>
             <input class="
             <%= validationErrors.find(e=>e.param === 'username') ? "invalid":"" %>
 
@@ -36,7 +36,7 @@
             <% } %>
         </div>
         <div>
-            <label for="password">Password</label>
+            <label for="password">पासवर्ड</label>
             <input class="<%= validationErrors.find(e=>e.param === 'confirmPassword') ? "invalid":"" %>"
             type="password" id="password" name="password" placeholder="Password" value="<%= oldInput.password %>" >
         </div>
@@ -44,7 +44,7 @@
             <%= validationErrors.find(e=>e.param === 'password') ? "The minimum password length is 5 characters.":"" %>
         </div>
         <div>
-            <label for="confirmPassword">Confirm Password</label>
+            <label for="confirmPassword">पासवर्डची पुष्टी करा</label>
             <input class="<%= validationErrors.find(e=>e.param === 'confirmPassword') ? "invalid":"" %>" 
             type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" value="<%= oldInput.confirmPassword %>" >
         </div>
