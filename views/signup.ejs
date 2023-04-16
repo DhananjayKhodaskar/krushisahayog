@@ -2,8 +2,8 @@
     <form  method="POST" class = "sign-up-card" >
         <h1>साइनअप</h1> 
         <div>
-            <label for="displayName">Name</label>
-            <input type="text" id="displayName" name="displayName" placeholder="Name"  value="<%= oldInput.displayName %>"required>
+            <label for="displayName">नाव</label>
+            <input type="text" id="displayName" name="displayName" placeholder="नाव"  value="<%= oldInput.displayName %>"required>
         </div>
         <div>
             <label for="email">ईमेल</label>
@@ -19,7 +19,7 @@
             
             id="email" 
             name="username" 
-            placeholder="Email" 
+            placeholder="ईमेल" 
             value="<%= oldInput.username %>" 
             >   
         </div>
@@ -38,7 +38,7 @@
         <div>
             <label for="password">पासवर्ड</label>
             <input class="<%= validationErrors.find(e=>e.param === 'confirmPassword') ? "invalid":"" %>"
-            type="password" id="password" name="password" placeholder="Password" value="<%= oldInput.password %>" >
+            type="password" id="password" name="password" placeholder="पासवर्ड" value="<%= oldInput.password %>" >
         </div>
         <div class="email error">
             <%= validationErrors.find(e=>e.param === 'password') ? "The minimum password length is 5 characters.":"" %>
@@ -46,7 +46,7 @@
         <div>
             <label for="confirmPassword">पासवर्डची पुष्टी करा</label>
             <input class="<%= validationErrors.find(e=>e.param === 'confirmPassword') ? "invalid":"" %>" 
-            type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" value="<%= oldInput.confirmPassword %>" >
+            type="password" id="confirmPassword" name="confirmPassword" placeholder="पासवर्डची पुष्टी करा" value="<%= oldInput.confirmPassword %>" >
         </div>
         <div class="password error">
             <% if(errorMessage){ %>
