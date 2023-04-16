@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>कृषीसहियोग</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="shortcut icon" type="image/jpg" href="/images/leaf.png"/>
+</head>
+<body>
+  <nav>
+    <h1><a href="/">कृषीसहियोग</a></h1>
+    <ul>
+        <% if(user){ %>
+        <li><a href="/logout">लॉगआऊट</a></li>
+        <li><a href="/changepassword" class="btn">Change Password</a></li>
+        <%}else{ %>
+        <li><a href="/login">लॉगिन</a></li>
+        <li><a href="/signup" class="btn">
+          साइनअप </a></li>
+        <% } %>
+    </ul>
+  </nav>
+  
